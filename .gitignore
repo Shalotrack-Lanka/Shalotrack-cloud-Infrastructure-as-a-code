@@ -1,4 +1,7 @@
+# Terragrunt cache
 **/.terragrunt-cache/
+
+# Terraform providers and state
 **/.terraform/
 *.tfstate
 *.tfstate.backup
