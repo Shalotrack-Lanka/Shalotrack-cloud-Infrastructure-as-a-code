@@ -3,16 +3,12 @@ include "root" {
 }
 
 terraform {
-  source = "tfr:///Azure/resource-group/azurerm//?version=1.1.0"
+  source = "."
 }
 
 inputs = {
-  location = "centralindia"
-  name     = "shalotrack-rg"
-
-  tags = {
-    Project     = "Shalotrack"
-    Environment = "dev"
-    ManagedBy   = "Terragrunt"
-  }
+  location    = "centralindia"
+  name        = "shalotrack-rg"
+  environment = "dev"
+  project     = "Shalotrack"
 }
